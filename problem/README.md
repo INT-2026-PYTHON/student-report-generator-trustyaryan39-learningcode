@@ -31,7 +31,7 @@ Build a package called `gradebook` that turns this raw list into useful statisti
 
 ## Required project layout
 
-```
+```text
 starter/
 ├── gradebook/
 │   ├── __init__.py   # marks gradebook as a package + re-exports public API
@@ -122,7 +122,7 @@ if __name__ == "__main__":
 
 ## Expected output
 
-```
+```text
 === Gradebook Report ===
 Total records: 12
 Subjects offered: English, Math, Science
@@ -158,11 +158,13 @@ Passing students (>= 60.0): Alice, Bob, Charlie, Diana
 
 1. Open the `starter/` folder.
 2. Implement the four functions in `stats.py` and test them quickly:
+
    ```python
    from gradebook.data import RECORDS
    from gradebook.stats import average_per_student
    print(average_per_student(RECORDS))
    ```
+
 3. Implement `reports.format_report` that calls into `stats.py` via a relative import.
 4. Wire `__init__.py` to re-export `RECORDS` and `format_report`.
 5. Run `python3 main.py` and compare to the expected output.

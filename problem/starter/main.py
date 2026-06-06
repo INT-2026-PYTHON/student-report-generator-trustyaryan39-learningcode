@@ -4,4 +4,4 @@ from gradebook import RECORDS, format_report
 
 
 if __name__ == "__main__":
-    print(format_report(RECORDS))
+    format_report(RECORDS)
